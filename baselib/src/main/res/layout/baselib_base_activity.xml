@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/baselib_base_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/baselibToolbarTitle"
+            app:navigationIcon="@drawable/ic_baselib_back">
+
+    </android.support.v7.widget.Toolbar>
+    <View
+            android:id="@+id/baselib_base_toolbar_divider"
+            android:layout_below="@id/baselib_base_toolbar"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="0.5dp"/>
+
+    <FrameLayout
+            android:id="@+id/baselib_base_content"
+            android:layout_below="@id/baselib_base_toolbar_divider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</RelativeLayout>

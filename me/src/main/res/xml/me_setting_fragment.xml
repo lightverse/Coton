@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Preference
+            android:icon="@drawable/ic_me_account_safe"
+            android:key="me_account_safe"
+            android:title="@string/me_account_and_safe"
+            app:allowDividerAbove="true" />
+
+    <Preference
+            android:icon="@drawable/ic_me_address"
+            android:key="me_address"
+            android:title="@string/me_address"
+            app:allowDividerAbove="true" />
+
+    <Preference
+            android:icon="@drawable/ic_me_message_setting"
+            android:key="me_message_setting"
+            android:title="@string/me_message_setting"
+            app:allowDividerAbove="true" />
+
+
+    <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_me_image_only_wifi"
+            android:key="me_image_only_wifi"
+            android:title="@string/me_image_only_wifi"
+            app:allowDividerAbove="true" />
+
+    <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_me_new_version"
+            android:key="me_auto_new_version"
+            android:title="@string/me_auto_new_version"
+            app:allowDividerAbove="true" />
+
+    <Preference
+            android:icon="@drawable/ic_me_clear_cache"
+            android:key="me_clear_cache"
+            android:title="@string/me_clear_cache"
+            app:allowDividerAbove="true" />
+
+    <Preference
+            android:icon="@drawable/ic_me_help_feedback"
+            android:key="me_help_and_feedback"
+            android:title="@string/me_help_and_feedback"
+            app:allowDividerAbove="true" />
+
+
+    <Preference
+            android:icon="@drawable/ic_me_about"
+            android:key="me_about"
+            android:title="@string/me_about"
+            app:allowDividerAbove="true" />
+
+</PreferenceScreen>

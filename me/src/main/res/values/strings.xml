@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    
+    <string name="me_account_and_safe">账户与安全</string>
+    <string name="me_address">收货地址</string>
+    <string name="me_message_setting">消息设置</string>
+    <string name="me_image_only_wifi">省流模式(图片只在wifi下下载)</string>
+    <string name="me_auto_new_version">wifi下自动下载新版本</string>
+    <string name="me_clear_cache">清理缓存</string>
+    <string name="me_help_and_feedback">帮助与反馈</string>
+    <string name="me_about">关于</string>
+</resources>

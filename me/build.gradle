@@ -1,0 +1,11 @@
+apply from:'../common_build.gradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':baselib')
+    kapt 'com.alibaba:arouter-compiler:1.2.1'
+
+//    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+}
