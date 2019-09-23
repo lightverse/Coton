@@ -9,6 +9,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import kotlinx.android.synthetic.main.baselib_base_activity.*
 
+/**
+ * todo 沉浸式
+ */
+
 open class BaseActivity : AppCompatActivity() {
 
 

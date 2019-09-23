@@ -3,7 +3,11 @@
     <application>
         <activity android:name=".router.UriProxyActivity">
             <intent-filter>
-                <data android:scheme="coton"/>
+                <data android:host="router"
+                        android:scheme="coton"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
             </intent-filter>
         </activity>
     </application>
