@@ -63,7 +63,7 @@ open class BaseActivity : AppCompatActivity() {
 
     private fun setRealContentView(view: View) {
         baselib_base_content.removeAllViews()
-        baselib_base_toolbar.addView(view)
+        baselib_base_content.addView(view)
     }
 
 
@@ -105,7 +105,7 @@ open class BaseActivity : AppCompatActivity() {
         }
         titleTextView.gravity = Gravity.CENTER
         baselib_base_toolbar.title = originTitle
-        TODO("处理147为DPIUtil.dpi2px()")
+//        TODO("处理147为DPIUtil.dpi2px()")
     }
 
 
