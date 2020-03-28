@@ -1,5 +1,6 @@
 package com.github.lightverse.baselib
 
+import android.content.res.AssetManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
