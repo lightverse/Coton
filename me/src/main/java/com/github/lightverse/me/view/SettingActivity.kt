@@ -1,24 +1,25 @@
 package com.github.lightverse.me.view
 
 import android.os.Bundle
-import android.preference.PreferenceActivity
-import android.support.v7.preference.SwitchPreferenceCompat
 import android.support.v4.content.res.ResourcesCompat
 import android.support.v7.preference.Preference
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.github.lightverse.baselib.BaseActivity
 import com.github.lightverse.baselib.preference.BasePreferenceFragment
 import com.github.lightverse.me.R
+import com.github.lightverse.me.databinding.MeSettingMainBinding
 
 @Route(path = "/me/setting")
 class SettingActivity : BaseActivity(){
 
+    private val meSettingMainBinding:MeSettingMainBinding by lazy {
+        MeSettingMainBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.me_setting_main)
+        setContentView(meSettingMainBinding.root)
         supportFragmentManager.beginTransaction().add(R.id.container,SettingFragment()).commitAllowingStateLoss()
         updateToolbarTitle("设置")
     }
